@@ -1,0 +1,21 @@
+
+
+/* Card Styles */
+
+.card--container {
+    width: 300px; /* You can adjust the width as needed */
+    padding: 20px;
+    background-color: #f0f0f08a; /* Background color for readability */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+    font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.card--title {
+  color:rgb(0, 0, 0);
+  display:grid;
+  grid-template-columns: 1 fr, 1fr;
+}
