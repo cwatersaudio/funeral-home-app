@@ -19,15 +19,17 @@ let homesArray;
 
 onValue(funeralHomes, function(snapshot) {  //keeps track of the most recent item added to the database for the purspose of updating
   homesArray = Object.values(snapshot.val())
- 
+  console.log(homesArray)
 })
 
 const locationCards = homesArray.map(item => {
- return (
+ if (item.address) {
+ 
+  return (
   <Card 
   address={item.address}
  />
- )
+ )}
 })
   return (
     <>
